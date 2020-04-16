@@ -1,8 +1,6 @@
 # RSuite Enhanced Edition
 > Make the best use of RSuite.
 
-## NOT PRODUCTION READY
-
 增强的 rsuite 组件，基于常用业务场景封装，提供了一些通用的交互以及 props。
 
 Components
@@ -171,6 +169,3 @@ function App() {
   );
 }
 ```
-
-## License
-RSuite Enhanced Edition is MIT licensed. Copyright (c) 2020-present, HYPERS.

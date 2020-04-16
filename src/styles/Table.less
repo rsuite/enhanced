@@ -1,0 +1,112 @@
+.checkbox-cell .@{ns}checkbox {
+  position: absolute;
+  top: 5px;
+  left: @table-view-padding-horizontal - @radio-sense-width;
+}
+
+.tag-list-wrap {
+  margin-left: -5px;
+  margin-right: -5px;
+
+  .@{ns}tag {
+    margin: 0 5px;
+  }
+}
+
+.@{ns}table-cell-wrap {
+  .disabled {
+    cursor: not-allowed;
+    color: #b5b5b5;
+  }
+
+  .minus-symbol {
+    &.error {
+      color: @error-color;
+    }
+
+    &.success {
+      color: @success-color;
+    }
+  }
+}
+
+.summary-header-cell {
+  .@{ns}table-cell-content {
+    position: relative;
+
+    .@{ns}table-cell-header-sort-wrapper {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+
+  .table-summary-header-prefix {
+    vertical-align: 1px;
+  }
+
+  .table-summary-header {
+    &-value {
+      font-size: 18px;
+      color: @H500;
+    }
+  }
+
+  &.@{ns}table-cell-header-sortable .table-summary-header-title {
+    padding-right: 20px;
+  }
+
+  &.@{ns}table-cell-header-sortable .@{ns}table-cell-last .table-summary-header-title {
+    padding-right: 10px;
+  }
+}
+
+// NEX 补充创意资质单元格
+.credenetial-file-cell {
+  .item-content {
+    cursor: default;
+
+    > span:hover {
+      color: @primary-color;
+    }
+  }
+}
+
+.@{ns}popover.credential-file-preview {
+  max-width: none;
+
+  .credential-file-preview-wrap {
+    position: relative;
+    height: 300px;
+    width: 300px;
+  }
+
+  .credential-file-preview-loading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+    text-align: center;
+    line-height: 300px;
+  }
+
+  img {
+    max-width: 300px;
+    max-height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+
+.check-cell {
+  .full-color {
+    color: @H500;
+  }
+}

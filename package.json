@@ -1,0 +1,35 @@
+{
+  "name": "@rsuite/enhanced",
+  "version": "1.0.0",
+  "description": "Make the best use of RSuite",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc && cp -R src/styles lib/styles",
+    "prebuild": "rm -rf dist",
+    "prepublishOnly": "npm run build",
+    "start": "tsc --watch",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsuite/enhanced.git"
+  },
+  "keywords": [
+    "rsuite"
+  ],
+  "author": "Doma <leishenghao@126.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rsuite/enhanced/issues"
+  },
+  "homepage": "https://github.com/rsuite/enhanced#readme",
+  "devDependencies": {
+    "@types/lodash": "^4.14.149",
+    "@types/react": "^16.9.34",
+    "rsuite": "^4.3.4",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
