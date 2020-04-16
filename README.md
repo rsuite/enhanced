@@ -9,6 +9,7 @@ Components
 - `<CheckPicker>`
 - `<Input>`
 - `<SelectPicker>`
+- `<Spinner>`
 - `<Table>`
 
 Hooks
@@ -40,6 +41,9 @@ Hooks
 |loading|`boolean`||
 |label|`React.ReactNode`||
 |delimiter|`React.ReactNode` (`"："`)|label 后面的分隔符|
+
+### `<Spinner>`
+仅仅是 `<Icon icon="spinner" spin />` 的封装。
 
 ### `<Table>`
 - 支持了勾选行的操作，可用于批量操作等业务场景。

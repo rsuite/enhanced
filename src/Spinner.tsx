@@ -1,8 +1,15 @@
 import React from 'react';
 import { Icon } from 'rsuite';
+import {IconProps} from "rsuite/es/Icon";
 
-export default function Spinner() {
+export interface SpinnerProps extends IconProps {
+
+}
+
+function Spinner(props: SpinnerProps) {
   return (
-    <Icon icon="spinner" spin />
+    <Icon icon="spinner" spin {...props} />
   );
 }
+
+export default Spinner;
