@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Make the best use of RSuite",
   "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "scripts": {
     "build": "tsc --outDir lib && tsc --outDir es && cp -R src/styles lib/styles",
     "prebuild": "rm -rf lib && rm -rf es",
@@ -31,5 +32,10 @@
   },
   "dependencies": {
     "lodash": "^4.17.15"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "rsuite": "^4.0.0"
   }
 }
