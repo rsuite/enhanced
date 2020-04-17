@@ -4,8 +4,8 @@
   "description": "Make the best use of RSuite",
   "main": "lib/index.js",
   "scripts": {
-    "build": "tsc && cp -R src/styles lib/styles",
-    "prebuild": "rm -rf dist",
+    "build": "tsc --outDir lib && tsc --outDir es && cp -R src/styles lib/styles",
+    "prebuild": "rm -rf lib && rm -rf es",
     "prepublishOnly": "npm run build",
     "start": "tsc --watch",
     "test": "echo \"No test specified\" && exit 0"
