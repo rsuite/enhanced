@@ -2,7 +2,7 @@ import React from 'react';
 import { Icon } from 'rsuite';
 import {IconProps} from "rsuite/es/Icon";
 
-export interface SpinnerProps extends IconProps {
+export interface SpinnerProps extends Omit<IconProps, 'icon' | 'spin'> {
 
 }
 
