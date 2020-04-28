@@ -13,7 +13,7 @@ export interface EnhancedPickerProps {
  * 为 Picker 添加 loading, label 等属性
  * 方便用于异步数据，表格工具栏筛选等场景
  */
-function enhancePicker<P = any>(Picker: React.ComponentType<P>) {
+function enhancePicker<P = any, EP = P & EnhancedPickerProps>(Picker: React.ComponentType<P>): React.ComponentType<EP> {
   function EnhancedPicker({
     label,
     delimiter = '：',
